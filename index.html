@@ -8,7 +8,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%8C%BF%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Marcellus&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Marcellus&family=Cinzel:wght@400;600&family=Great+Vibes&family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet">
 <style>
 :root{
   --spreadW: 372px;
@@ -181,10 +181,10 @@ body:not(.opened) #flapL .face.b{filter:drop-shadow(5px 5px 8px rgba(0,0,0,.4))}
   border-radius:2px 5px 5px 2px;
   box-shadow:0 6px 18px rgba(0,0,0,.42), 0 1px 0 rgba(255,255,255,.35) inset}
 .pf.back{transform:rotateY(180deg);background:
-  linear-gradient(115deg,#eef3f2,#e2ecec 45%,#f3f7f5);
+  linear-gradient(115deg,#fdf9ef,#f4e9d4 45%,#fcf7ea);
   border-radius:5px 2px 2px 5px}
 .pf.back:after{content:"";position:absolute;inset:0;background:linear-gradient(270deg, rgba(0,0,0,.16), transparent 26%)}
-.pf svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.pf > svg{position:absolute;inset:0;width:100%;height:100%;display:block}
 .pf .gutter{position:absolute;left:0;top:0;bottom:0;width:16px;pointer-events:none;
   background:linear-gradient(90deg, rgba(60,40,20,.30), rgba(60,40,20,.06) 55%, transparent)}
 .page .sheen{position:absolute;inset:0;pointer-events:none;opacity:0;border-radius:inherit;
@@ -195,30 +195,78 @@ body:not(.opened) #flapL .face.b{filter:drop-shadow(5px 5px 8px rgba(0,0,0,.4))}
 /* ---------- page copy ---------- */
 .copy{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
   text-align:center;color:var(--ink);padding:0 46px}
-.om{font-family:"Cinzel",serif;font-size:11px;letter-spacing:.30em;color:var(--gold-dk);text-transform:uppercase}
-.bless{font-size:12.5px;font-style:italic;color:var(--ink-soft);letter-spacing:.02em;line-height:1.42}
-.nm{font-family:"Marcellus",serif;font-size:25px;line-height:1.06;color:#8a2f22;letter-spacing:.012em}
-.amp{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:17px;color:var(--gold-dk);letter-spacing:.16em}
-.ttl{font-family:"Cinzel",serif;font-size:12px;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-dk)}
-.dt{font-family:"Marcellus",serif;font-size:17px;color:#7a3a1c;letter-spacing:.05em}
-.sm{font-size:13.5px;color:var(--ink-soft);line-height:1.55}
-.rule{width:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.gan{width:40px;height:50px;flex:none;display:block;margin:0 auto;
+  filter:drop-shadow(0 1px 1px rgba(140,105,35,.35))}
+.devn{font-family:"Tiro Devanagari Sanskrit","Noto Serif Devanagari",serif;
+  font-size:13.5px;line-height:1.55;color:#a8791f;margin-top:1px}
+.host{font-family:"Marcellus",serif;font-size:15px;color:#8e1420;line-height:1.26;letter-spacing:.004em}
+.req{font-size:13px;font-style:italic;color:#a02030;line-height:1.4}
+.scriptnm{font-family:"Great Vibes","Cormorant Garamond",cursive;font-size:34px;line-height:1.08;
+  color:#a3101c;letter-spacing:.012em;text-shadow:0 1px 0 rgba(255,255,255,.55)}
+.paren{font-size:11px;font-style:italic;color:#8e2230;line-height:1.4}
+.jn{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:16px;color:#9a2030}
+.lil{font-family:"Cormorant Garamond",serif;font-style:italic;font-size:14.5px;color:#9a2030}
+.big{font-family:"Marcellus",serif;font-size:19px;color:#8e1420;line-height:1.22;letter-spacing:.012em}
+.big sup{font-size:.56em;vertical-align:super;letter-spacing:0}
+.addr{font-size:12.5px;font-style:italic;color:#8e2230;line-height:1.42}
+.slot{display:flex;align-items:baseline;justify-content:center;gap:7px;flex-wrap:wrap;margin-top:4px}
+.slot b{font-family:"Marcellus",serif;font-weight:400;font-size:15.5px;color:#8e1420;letter-spacing:.01em}
+.slot i{font-size:13px;font-style:italic;color:#8e2230}
+.compl{font-size:12.5px;font-style:italic;color:#8e2230}
+.compl b{font-family:"Marcellus",serif;font-weight:400;font-style:normal;font-size:14px;color:#8e1420}
+.rule{width:62px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
 .diamond{width:5px;height:5px;background:var(--gold);transform:rotate(45deg)}
 .sep{display:flex;align-items:center;gap:9px}
-.sched{width:100%;max-width:240px;display:flex;flex-direction:column;gap:11px;margin-top:2px}
-.ev{display:flex;flex-direction:column;gap:1px}
-.ev .k{font-family:"Cinzel",serif;font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:#a2571f}
-.ev .v{font-size:15px;color:var(--ink)}
-.ev .w{font-size:12px;color:var(--ink-soft);font-style:italic}
-.mapbtn{margin-top:2px;display:inline-flex;align-items:center;gap:7px;
-  font-family:"Cinzel",serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;
-  color:#7a4a12;text-decoration:none;border:1px solid rgba(140,105,35,.5);
-  padding:6px 13px;border-radius:2px;background:rgba(255,246,224,.7);transition:.25s}
+.mapbtn{display:inline-flex;align-items:center;gap:7px;
+  font-family:"Cinzel",serif;font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;
+  color:#7a4a12;text-decoration:none;border:1px solid rgba(140,105,35,.45);
+  padding:5px 12px;border-radius:2px;background:rgba(255,248,231,.72);transition:.25s}
 .mapbtn:hover{background:#f6e6bd;border-color:var(--gold-dk)}
 
+/* ---------- the tie ---------- */
+/* the right lobe folds with rotateY(-177deg), which flips its translateZ(-60px)
+   toward the viewer — the thread has to clear that to sit on top of the fold */
+#tie{position:absolute;inset:0;z-index:90;pointer-events:none;transform:translateZ(112px)}
+#tie svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+#tie.gone{display:none}
+#tieSlack{opacity:0}
+#tieLoopU,#tieLoopD,#tieKnot,#tieTailL,#tieTailR{
+  transform-box:view-box;transform-origin:190px 236px}
+#tieDrop{transform-box:view-box;transform-origin:186px 240px}
+
+.untying #tieLoopU{animation:loopGo .54s cubic-bezier(.36,0,.66,1) forwards}
+.untying #tieLoopD{animation:loopGo .54s cubic-bezier(.36,0,.66,1) .06s forwards}
+@keyframes loopGo{
+  0%  {transform:scale(1) rotate(0deg);opacity:1}
+  28% {transform:scale(1.18) rotate(-8deg);opacity:1}
+  100%{transform:scale(.04) rotate(-32deg);opacity:0}
+}
+.untying #tieTailR{animation:tailGo .62s cubic-bezier(.3,0,.6,1) .1s forwards}
+.untying #tieTailL{animation:tailGo .62s cubic-bezier(.3,0,.6,1) .17s forwards}
+@keyframes tailGo{
+  0%  {transform:rotate(0deg) translateY(0);opacity:1}
+  38% {transform:rotate(10deg) translateY(-12px);opacity:1}
+  100%{transform:rotate(-18deg) translateY(30px);opacity:0}
+}
+.untying #tieKnot{animation:knotGo .52s ease-in .24s forwards}
+@keyframes knotGo{
+  0%  {transform:scale(1) rotate(0deg);opacity:1}
+  46% {transform:scale(.92) rotate(14deg);opacity:1}
+  100%{transform:scale(.24) rotate(38deg);opacity:0}
+}
+/* a released cord snaps slack — keep the cross-fade short or it ghosts */
+.untying #tieTaut{animation:fadeOut .17s ease-out .44s forwards}
+.untying #tieSlack{animation:fadeIn .19s ease-out .45s forwards}
+@keyframes fadeOut{to{opacity:0}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.untying #tieDrop{animation:cordDrop .48s cubic-bezier(.4,.05,.62,1) .70s forwards}
+@keyframes cordDrop{
+  0%  {transform:translateY(0) rotate(0deg);opacity:1}
+  100%{transform:translateY(210px) rotate(7deg);opacity:0}
+}
 /* ---------- tassels ---------- */
-#tassels{position:absolute;left:10px;top:-18px;width:130px;height:220px;pointer-events:none;z-index:80;
-  transform-origin:24px 6px;opacity:0;transition:opacity .5s .7s;
+#tassels{position:absolute;left:-78px;top:24px;width:104px;height:176px;pointer-events:none;z-index:80;
+  transform-origin:78px 6px;opacity:0;transition:opacity .5s .7s;
   animation:swing 5.2s ease-in-out infinite alternate;translate:0 0 22px}
 .opened #tassels{opacity:1}
 #tassels.kick{animation:kick 1.5s cubic-bezier(.25,.8,.3,1)}
@@ -273,6 +321,7 @@ body:not(.opened) #flapL .face.b{filter:drop-shadow(5px 5px 8px rgba(0,0,0,.4))}
 @media (prefers-reduced-motion:reduce){
   #leaf,.flap,.page,#scaler,#shadow{transition-duration:.01ms !important}
   #tassels,#hint .tapicon{animation:none !important}
+  #tie *{animation:none !important}
   .petal{display:none}
 }
 </style>
@@ -302,7 +351,7 @@ body:not(.opened) #flapL .face.b{filter:drop-shadow(5px 5px 8px rgba(0,0,0,.4))}
 
 <div id="stage">
   <div id="scaler">
-    <div id="leaf" role="button" tabindex="0" aria-label="Open the banana leaf invitation">
+    <div id="leaf" role="button" tabindex="0" aria-label="Untie and open the banana leaf invitation">
       <div id="shadow"></div>
 
       <div class="flap" id="flapL">
@@ -321,6 +370,8 @@ body:not(.opened) #flapL .face.b{filter:drop-shadow(5px 5px 8px rgba(0,0,0,.4))}
         <div id="book"></div>
         <div id="tassels"></div>
       </div>
+
+      <div id="tie"></div>
     </div>
   </div>
 </div>
@@ -328,7 +379,7 @@ body:not(.opened) #flapL .face.b{filter:drop-shadow(5px 5px 8px rgba(0,0,0,.4))}
 <div id="vignette"></div>
 <div id="petals"></div>
 
-<div id="hint"><div class="tapicon"></div><p>Tap the leaf to open</p></div>
+<div id="hint"><div class="tapicon"></div><p>Tap to untie</p></div>
 
 <nav id="nav" aria-label="Invitation pages">
   <button class="arw" id="prev" aria-label="Previous page">&#10094;</button>
@@ -342,33 +393,31 @@ body:not(.opened) #flapL .face.b{filter:drop-shadow(5px 5px 8px rgba(0,0,0,.4))}
    EDIT EVERYTHING BELOW — this is the only block you need to touch
    ============================================================ */
 const INVITE = {
-  invocation : "Shubham Astu",
-  blessingLine : "With the blessings of the Almighty<br>and our beloved elders",
+  invocation : "&#2384; &#2358;&#2381;&#2352;&#2368; &#2327;&#2339;&#2375;&#2358;&#2366;&#2351; &#2344;&#2350;&#2307;",
 
-  groom      : "Aravind",
-  bride      : "Meenakshi",
-  joiner     : "weds",
-  heroDate   : "Sunday, 14 December 2026",
+  /* ---- card 1 ---- */
+  hosts      : "Smt. Mahalakshmi &amp; Shri Ravinarayan",
+  request    : "Request your gracious presence to celebrate<br>and bless the wedding of their daughter",
+  bride      : "Sow. Shruti",
+  brideParen : "(Grand daughter of late Smt. Lakshmi &amp; Shri P. N. Seshan<br>&amp; Late Smt. Alamelu &amp; Shri C. N. Vaidyanathan)",
+  joiner     : "with",
+  groom      : "Chi. Rahul",
+  groomParen : "(Son of Smt. Usha &amp; Shri Rangilal Jaiswal)",
 
-  muhurtham  : {
-    title : "Muhurtham",
-    when  : "Sunday, 14 December 2026",
-    time  : "between 9:30 &amp; 10:30 in the morning",
-    venue : "Sri Lakshmi Kalyana Mandapam",
-    addr  : "42, Temple Street, Mylapore<br>Chennai 600004"
-  },
-
-  events : [
-    { k:"Reception",  v:"Saturday, 13 December",  w:"7:00 pm onwards" },
-    { k:"Nalangu",    v:"Saturday, 13 December",  w:"5:00 pm &middot; at the mandapam" },
-    { k:"Muhurtham",  v:"Sunday, 14 December",    w:"9:30 am &middot; followed by lunch" }
+  /* ---- card 2 ---- */
+  dateLead   : "On",
+  date       : "Friday, 20<sup>th</sup> November 2026",
+  venueLead  : "at",
+  venue      : "Sumati Gurjar Bhavan",
+  address    : "Sant Vershaw Kakkaya Marg, opp. Sushrut Hospital,<br>Swastik Park, Chembur, Mumbai, 400071",
+  slots      : [
+    { k:"Muhurtham", v:"Abhijit Lagnam 12:15 to 1.00 pm" },
+    { k:"Reception", v:"6:30 pm to 10:00 pm" }
   ],
-  eventsNote : "Your presence is the blessing<br>we look forward to most",
+  complimentsLead : "With Best Compliments from:",
+  compliments     : "Rashmi &amp; Shanker",
 
-  familyLeft  : { head:"Groom's Parents", names:"Mr. &amp; Mrs. Ramachandran" },
-  familyRight : { head:"Bride's Parents", names:"Mr. &amp; Mrs. Venkataraman" },
-  rsvp        : "R.S.V.P. &nbsp;+91 98400 00000 &nbsp;&middot;&nbsp; +91 98400 11111",
-  mapUrl      : "https://maps.google.com/?q=Mylapore+Chennai"
+  mapUrl     : "https://maps.google.com/?q=Sumati+Gurjar+Bhavan+Swastik+Park+Chembur+Mumbai+400071"
 };
 /* ============================================================
    Nothing below needs editing.
@@ -429,201 +478,243 @@ function garland(p,n,r,kind,seed){
   }
   return s;
 }
-/* ---------------- peacock feather ------------------------------ */
-function peacock(x,y,rot,sc){
-  const barbs = Array.from({length:16},(_,i)=>{
-    const t=i/15, ang=-70+t*140, L=15+Math.sin(t*Math.PI)*11;
-    const rx=Math.cos(ang*Math.PI/180)*L, ry=-Math.abs(Math.sin((ang+90)*Math.PI/180))*L-8;
-    return `<path d="M0,4 Q${R2(rx*.4)},${R2(ry*.5)} ${R2(rx)},${R2(ry-16)}" stroke="${i%2?'#2f8f79':'#3aa88c'}" stroke-width=".75" fill="none" opacity=".58"/>`;
-  }).join("");
-  return `<g transform="translate(${x} ${y}) rotate(${rot}) scale(${sc})">
-    <path d="M0,36 C1.4,26 1.4,15 0,6" stroke="#8a6b2a" stroke-width="1.5" fill="none"/>
-    ${barbs}
-    <ellipse cx="0" cy="-4" rx="12.5" ry="15.5" fill="#c9a13c" opacity=".92"/>
-    <ellipse cx="0" cy="-4" rx="9.6" ry="12.3" fill="#1f8b7c"/>
-    <path d="M0,-16 C7,-16 10,-9 8,-2 C6,4 2,7 0,7 C-2,7 -6,4 -8,-2 C-10,-9 -7,-16 0,-16 Z" fill="#123f8f"/>
-    <ellipse cx="0" cy="-5" rx="4.2" ry="5.4" fill="#0b1c4d"/>
-    <ellipse cx="-1.3" cy="-7" rx="1.5" ry="1.9" fill="#5f8bd8" opacity=".85"/>
+/* ---------------- plumeria / frangipani ------------------------ */
+function plumeria(x,y,r,rot,seed){
+  const rnd=rng((seed||1)*31+5);
+  let p="";
+  for(let k=0;k<5;k++){
+    const a=k*72+(rot||0);
+    p+=`<path d="M0,0 C${R2(-r*.46)},${R2(-r*.44)} ${R2(-r*.40)},${R2(-r*1.00)} 0,${R2(-r*1.14)}
+                C${R2(r*.40)},${R2(-r*1.00)} ${R2(r*.46)},${R2(-r*.44)} 0,0 Z"
+          transform="rotate(${a})" fill="#fffdf6" stroke="#e6dcc2" stroke-width=".45"/>`;
+  }
+  const tone = rnd()>.5 ? "#f7dc8e" : "#f3d478";
+  return `<g transform="translate(${R2(x)} ${R2(y)})">${p}
+    <circle r="${R2(r*.30)}" fill="${tone}" opacity=".9"/>
+    <circle r="${R2(r*.15)}" fill="#e9bf55" opacity=".7"/></g>`;
+}
+/* ---------------- mango / banana leaf blade -------------------- */
+function blade(x,y,len,wid,rot,tone){
+  return `<g transform="translate(${R2(x)} ${R2(y)}) rotate(${R2(rot)})">
+    <path d="M0,0 C${R2(-wid)},${R2(len*.32)} ${R2(-wid*.82)},${R2(len*.78)} 0,${R2(len)}
+             C${R2(wid*.82)},${R2(len*.78)} ${R2(wid)},${R2(len*.32)} 0,0 Z"
+          fill="${tone}" stroke="#2f5f1f" stroke-width=".4" stroke-opacity=".5"/>
+    <path d="M0,${R2(len*.06)} L0,${R2(len*.94)}" stroke="#2c5a1c" stroke-width=".55" opacity=".45"/>
   </g>`;
 }
-/* ---------------- lotus / rose --------------------------------- */
-function lotus(x,y,sc){
-  let pet="";
-  for(let i=-3;i<=3;i++){
-    const a=i*20;
-    pet+=`<ellipse cx="0" cy="-9" rx="5.2" ry="11" transform="rotate(${a})" fill="${i===0?'#f5a9c0':'#efbfd0'}" stroke="#d8869f" stroke-width=".5"/>`;
-  }
-  return `<g transform="translate(${x} ${y}) scale(${sc})">${pet}<circle r="3.2" fill="#f7e08a"/></g>`;
-}
-function rose(x,y,sc,c1,c2){
-  return `<g transform="translate(${x} ${y}) scale(${sc})">
-    <circle r="9" fill="${c1}"/>
-    <path d="M-6,2 A6,6 0 1,1 6,2 A4.5,4.5 0 1,1 -3,3" fill="none" stroke="${c2}" stroke-width="1.9" stroke-linecap="round"/>
-    <path d="M-3.2,1 A3.2,3.2 0 1,1 3,1.6" fill="none" stroke="${c2}" stroke-width="1.5" stroke-linecap="round"/>
+const LEAF_TONE = ["#3f7f28","#356f21","#4a8f2f","#2d6019","#55a036","#2a5717"];
+/* ---------------- brass bell on a short chain ------------------ */
+function bell(x,y,sc,drop){
+  const d = drop || 0;
+  let ch="";
+  for(let i=0;i<Math.max(1,Math.round(d/7));i++)
+    ch+=`<ellipse cy="${R2(-d+3+i*7)}" rx="2.1" ry="3.4" fill="none" stroke="#b08526" stroke-width="1.2" opacity=".9"/>`;
+  return `<g transform="translate(${R2(x)} ${R2(y)}) scale(${sc})">
+    ${ch}
+    <circle cy="${R2(-d-2)}" r="2.2" fill="none" stroke="#b08526" stroke-width="1.2"/>
+    <path d="M-2.4,-9 L2.4,-9 L1.6,-12.5 L-1.6,-12.5 Z" fill="#c69a30"/>
+    <path d="M-8,5.4 C-8,-3.4 -4.8,-9 0,-9 C4.8,-9 8,-3.4 8,5.4 Z" fill="url(#brassG)" stroke="#8d6b1d" stroke-width=".5"/>
+    <path d="M-5.4,4.4 C-5.4,-2.2 -3.4,-6.6 -1.1,-7.4 C-3,-4.2 -3.4,0 -3,4.4 Z" fill="#ffe6a6" opacity=".55"/>
+    <ellipse cy="5.6" rx="8.8" ry="2.4" fill="#d3a437" stroke="#8d6b1d" stroke-width=".45"/>
+    <path d="M0,7.4 L0,10.6" stroke="#a8802a" stroke-width="1.1"/>
+    <circle cy="11.8" r="1.9" fill="#9c7622"/>
   </g>`;
 }
-/* ---------------- banana plant --------------------------------- */
-function bananaPlant(x,y,h,sc,seed){
-  const rnd=rng(seed), n=6;
-  const tone=["#4b7c2c","#3d6a24","#588f31","#33591d","#66a038","#2c5019"];
-  let s=`<g transform="translate(${x} ${y}) scale(${sc})">`;
-  s+=`<path d="M-3.5,0 C-2.6,${R2(-h*.28)} -2,${R2(-h*.45)} -1.6,${R2(-h*.5)}
-        L1.6,${R2(-h*.5)} C2,${R2(-h*.45)} 2.6,${R2(-h*.28)} 3.5,0 Z" fill="#5e7a34"/>`;
-  const crown=-h*.48;
-  for(let i=0;i<n;i++){
-    const t=i/(n-1);
-    const ang=-158+t*136+(rnd()-.5)*10;      /* degrees, fanned out */
-    const L=h*(.68+rnd()*.46), W=L*(.19+rnd()*.05);
-    const a=ang*Math.PI/180, ca=Math.cos(a), sa=Math.sin(a);
-    const nx=-sa, ny=ca;
-    const px=(u,w)=>[R2(ca*L*u+nx*w), R2(crown+sa*L*u+ny*w)];
-    const [tx,ty]=px(1,0);
-    const [a1x,a1y]=px(.16, W), [a2x,a2y]=px(.80, W*.92);
-    const [b1x,b1y]=px(.80,-W*.92), [b2x,b2y]=px(.16,-W);
-    const g=tone[(i+seed)%tone.length];
-    s+=`<g><path d="M0,${R2(crown)} C${a1x},${a1y} ${a2x},${a2y} ${tx},${ty}
-            C${b1x},${b1y} ${b2x},${b2y} 0,${R2(crown)} Z" fill="${g}"/>`;
-    /* midrib + a few side veins so it reads as a banana blade */
-    s+=`<path d="M0,${R2(crown)} L${tx},${ty}" stroke="#a6cf72" stroke-width=".9" opacity=".55" fill="none"/>`;
-    for(let k=1;k<=4;k++){
-      const u=k/5, [mx,my]=px(u,0), [ox,oy]=px(u+.10, W*.78), [o2x,o2y]=px(u+.10,-W*.78);
-      s+=`<path d="M${ox},${oy} L${mx},${my} L${o2x},${o2y}" stroke="#1f4413" stroke-width=".55" opacity=".28" fill="none"/>`;
-    }
-    s+=`</g>`;
-  }
-  return s+`</g>`;
+/* ---------------- hanging brass oil lamp ----------------------- */
+function hangLamp(x,topY,len,sc,seed){
+  let ch="";
+  const links = Math.max(2, Math.round(len/8));
+  for(let i=0;i<links;i++)
+    ch+=`<ellipse cx="0" cy="${R2(topY+4+i*8)}" rx="2.4" ry="4" fill="none" stroke="#b08526" stroke-width="1.5" opacity=".95"/>`;
+  const y = topY + len;
+  return `<g>
+    ${ch}
+    <g transform="translate(${R2(x)} ${R2(y)}) scale(${sc})">
+      <path d="M0,-14 L0,-4" stroke="#a8802a" stroke-width="1.6"/>
+      <circle cy="-5" r="3.2" fill="url(#brassG)" stroke="#8d6b1d" stroke-width=".5"/>
+      <path d="M-15,0 L15,0 L11,7 L-11,7 Z" fill="url(#brassG)" stroke="#8d6b1d" stroke-width=".55"/>
+      <path d="M-11,7 C-11,19 -6,26 0,26 C6,26 11,19 11,7 Z" fill="url(#brassG)" stroke="#8d6b1d" stroke-width=".6"/>
+      <path d="M-7.5,9 C-7.5,17 -5,22 -2.6,23.4 C-5.6,19 -6.4,14 -6,9 Z" fill="#ffe6a6" opacity=".5"/>
+      <path d="M-15,0 C-19,-1 -21,-3 -20.5,-5 L-16,-2.4 Z" fill="#c69a30"/>
+      <path d="M15,0 C19,-1 21,-3 20.5,-5 L16,-2.4 Z" fill="#c69a30"/>
+      <ellipse cy="26" rx="7" ry="2.6" fill="#b98f2b"/>
+      <path d="M0,29 L0,33" stroke="#a8802a" stroke-width="1.2"/>
+      <circle cy="34.4" r="2.2" fill="#b98f2b"/>
+      <g transform="translate(-16 -3)">
+        <path d="M0,0 C-3.4,-4 -2.4,-9 0,-13 C2.4,-9 3.4,-4 0,0 Z" fill="#ffb23a" opacity=".95"/>
+        <path d="M0,-1.6 C-1.8,-4.4 -1.2,-7.4 0,-9.6 C1.2,-7.4 1.8,-4.4 0,-1.6 Z" fill="#fff3c4"/>
+      </g>
+      <g transform="translate(16 -3)">
+        <path d="M0,0 C-3.4,-4 -2.4,-9 0,-13 C2.4,-9 3.4,-4 0,0 Z" fill="#ffb23a" opacity=".95"/>
+        <path d="M0,-1.6 C-1.8,-4.4 -1.2,-7.4 0,-9.6 C1.2,-7.4 1.8,-4.4 0,-1.6 Z" fill="#fff3c4"/>
+      </g>
+      <ellipse cx="-16" cy="-8" rx="9" ry="12" fill="url(#glowG)"/>
+      <ellipse cx="16" cy="-8" rx="9" ry="12" fill="url(#glowG)"/>
+    </g>
+  </g>`;
 }
-/* ---------------- shrubbery ------------------------------------ */
-function bush(x,y,w,h,seed,pal){
-  const rnd=rng(seed); pal=pal||["#3f6f2a","#4f8534","#335c22","#5c9a3c"];
-  let s=`<g>`;
-  for(let i=0;i<26;i++){
-    const cx=x+(rnd()-.5)*w, cy=y-rnd()*h*.9, r=h*(.16+rnd()*.26);
-    s+=`<circle cx="${R2(cx)}" cy="${R2(cy)}" r="${R2(r)}" fill="${pal[i%pal.length]}" opacity="${R2(.72+rnd()*.28)}"/>`;
+/* ---------------- Ganesha crest -------------------------------- */
+function ganesha(x,y,sc){
+  return `<g transform="translate(${R2(x)} ${R2(y)}) scale(${sc})">
+    <g fill="#c8992e">
+      <!-- crown -->
+      <path d="M0,-52 L3.4,-44 L-3.4,-44 Z"/>
+      <path d="M-13,-40 C-11,-52 11,-52 13,-40 C8,-43 -8,-43 -13,-40 Z"/>
+      <path d="M-14.5,-40 L14.5,-40 L12.6,-35 L-12.6,-35 Z"/>
+      <!-- head -->
+      <ellipse cx="0" cy="-21" rx="14.4" ry="14"/>
+      <!-- ears -->
+      <path d="M-13,-31 C-27,-35 -35,-24 -31,-12 C-28,-3 -18,-4 -13,-11 Z"/>
+      <path d="M13,-31 C27,-35 35,-24 31,-12 C28,-3 18,-4 13,-11 Z"/>
+      <!-- trunk -->
+      <path d="M-3.6,-13 C-3.6,-4 -8,2 -12.6,6 C-17.4,10.2 -15.6,17.6 -9.6,17.6
+               C-5.6,17.6 -3.4,14.6 -4.2,11.6 L-7.2,12.4 C-6.8,14.6 -8,15.6 -9.6,15.2
+               C-12,14.6 -12.4,11.4 -10,9 C-4.6,3.8 0.6,-3.6 0.8,-13 Z"/>
+      <!-- tusks -->
+      <path d="M-8.4,-10.4 L-11.4,-1.6 L-7,-8 Z" fill="#f2e2bb"/>
+      <path d="M8.4,-10.4 L11.4,-1.6 L7,-8 Z" fill="#f2e2bb"/>
+      <!-- body -->
+      <ellipse cx="0" cy="10" rx="17.6" ry="14.6"/>
+      <!-- arms -->
+      <path d="M-15,-2 C-24,0 -28,8 -25,15 C-23.6,18.4 -20,18 -19.6,15 C-19.2,11 -17.6,6 -13.6,4 Z"/>
+      <path d="M15,-2 C24,0 28,8 25,15 C23.6,18.4 20,18 19.6,15 C19.2,11 17.6,6 13.6,4 Z"/>
+      <!-- upper arms holding attributes -->
+      <path d="M-16,-16 C-24,-20 -31,-17 -33,-11 L-29.6,-9.6 C-28,-13.6 -23.4,-15.4 -17.6,-12.6 Z"/>
+      <path d="M16,-16 C24,-20 31,-17 33,-11 L29.6,-9.6 C28,-13.6 23.4,-15.4 17.6,-12.6 Z"/>
+      <!-- lotus seat -->
+      <path d="M-25,24 C-19,20 -9,18.6 0,18.6 C9,18.6 19,20 25,24
+               C19,29.6 9,31.6 0,31.6 C-9,31.6 -19,29.6 -25,24 Z"/>
+      <path d="M-30,25.6 C-25,23 -21,24.4 -19,27.6 C-23,29.6 -27.6,28.6 -30,25.6 Z"/>
+      <path d="M30,25.6 C25,23 21,24.4 19,27.6 C23,29.6 27.6,28.6 30,25.6 Z"/>
+    </g>
+    <circle cx="0" cy="-27" r="2.4" fill="#f6ecd2"/>
+    <ellipse cx="-6.6" cy="-22.6" rx="2.2" ry="1.5" fill="#fbf4e2"/>
+    <ellipse cx="6.6" cy="-22.6" rx="2.2" ry="1.5" fill="#fbf4e2"/>
+    <path d="M-22,-22 C-26,-19 -27.4,-14 -26,-10" stroke="#a87f1f" stroke-width=".8" fill="none" opacity=".7"/>
+    <path d="M22,-22 C26,-19 27.4,-14 26,-10" stroke="#a87f1f" stroke-width=".8" fill="none" opacity=".7"/>
+  </g>`;
+}
+/* ---------------- ornamental flourish under the crest ---------- */
+function flourish(x,y,w,sc){
+  const half = `<path d="M0,0 C${R2(w*.24)},${R2(-6*sc)} ${R2(w*.40)},${R2(-8*sc)} ${R2(w*.50)},${R2(-3*sc)}
+                         C${R2(w*.56)},0 ${R2(w*.50)},${R2(4*sc)} ${R2(w*.42)},${R2(2*sc)}
+                         C${R2(w*.36)},0 ${R2(w*.42)},${R2(-4*sc)} ${R2(w*.50)},${R2(-3*sc)}"
+                  fill="none" stroke="#c8992e" stroke-width="${R2(1.1*sc)}" stroke-linecap="round"/>
+                <path d="M${R2(w*.14)},${R2(-3*sc)} C${R2(w*.20)},${R2(-9*sc)} ${R2(w*.30)},${R2(-10*sc)} ${R2(w*.32)},${R2(-5*sc)}"
+                  fill="none" stroke="#c8992e" stroke-width="${R2(.9*sc)}" stroke-linecap="round"/>
+                <ellipse cx="${R2(w*.22)}" cy="${R2(-7*sc)}" rx="${R2(3.4*sc)}" ry="${R2(2.1*sc)}"
+                  transform="rotate(-24 ${R2(w*.22)} ${R2(-7*sc)})" fill="#3f7f28" opacity=".85"/>`;
+  return `<g transform="translate(${R2(x)} ${R2(y)})">
+    <g>${half}</g><g transform="scale(-1 1)">${half}</g></g>`;
+}
+/* ---------------- palm tree (background watermark) ------------- */
+function palm(x,baseY,h,sc,seed){
+  const rnd=rng(seed||3);
+  let f="";
+  for(let k=0;k<9;k++){
+    const a = -170 + k*21 + (rnd()-.5)*9;
+    const L = (34 + rnd()*16)*sc;
+    f+=`<path d="M0,0 Q${R2(Math.cos(a*Math.PI/180)*L*.55)},${R2(Math.sin(a*Math.PI/180)*L*.55-8*sc)}
+                   ${R2(Math.cos(a*Math.PI/180)*L)},${R2(Math.sin(a*Math.PI/180)*L+10*sc)}"
+          stroke="#8c7c5e" stroke-width="${R2(5.4*sc)}" fill="none" stroke-linecap="round" opacity=".75"/>`;
   }
-  return s+`</g>`;
+  return `<g transform="translate(${R2(x)} ${R2(baseY)})">
+    <path d="M0,0 C${R2(3*sc)},${R2(-h*.4)} ${R2(-4*sc)},${R2(-h*.74)} ${R2(-2*sc)},${R2(-h)}"
+      stroke="#8c7c5e" stroke-width="${R2(5*sc)}" fill="none" stroke-linecap="round"/>
+    <g transform="translate(${R2(-2*sc)} ${R2(-h)})">${f}</g>
+  </g>`;
 }
 /* ---------------- gopuram (temple tower) ----------------------- */
 function gopuram(x,baseY,w,h){
-  const tiers=7; let s=`<g transform="translate(${x} ${baseY})">`;
-  s+=`<rect x="${-w/2-4}" y="${-h*.06}" width="${w+8}" height="${h*.06}" fill="#d8c9a8" stroke="#b9a374" stroke-width=".6"/>`;
+  const tiers = 6;
+  let s = `<g>`;
   for(let i=0;i<tiers;i++){
-    const t=i/tiers, t2=(i+1)/tiers;
-    const wb=w*(1-t*.62), wt=w*(1-t2*.62);
-    const yb=-h*.06-h*.94*t, yt=-h*.06-h*.94*t2;
-    const shade=i%2? "#f2e7cd":"#e8dabb";
-    s+=`<path d="M${R2(-wb/2)},${R2(yb)} L${R2(wb/2)},${R2(yb)} L${R2(wt/2)},${R2(yt+2)} L${R2(-wt/2)},${R2(yt+2)} Z" fill="${shade}" stroke="#bfa87a" stroke-width=".55"/>`;
-    s+=`<rect x="${R2(-wt/2-2)}" y="${R2(yt)}" width="${R2(wt+4)}" height="3" fill="#d3bf90" stroke="#b39c68" stroke-width=".4"/>`;
-    const niches=Math.max(2,5-i);
-    for(let k=0;k<niches;k++){
-      const nx=(-wb/2)+ (wb/(niches))*(k+.5), nh=(yt-yb)*.62;
-      s+=`<path d="M${R2(nx-wb*.055)},${R2(yb-2)} L${R2(nx-wb*.055)},${R2(yb+nh*.62)} Q${R2(nx)},${R2(yb+nh)} ${R2(nx+wb*.055)},${R2(yb+nh*.62)} L${R2(nx+wb*.055)},${R2(yb-2)} Z" fill="#cbb488"/>`;
-      s+=`<circle cx="${R2(nx)}" cy="${R2(yb+nh*.5)}" r="${R2(wb*.028)}" fill="#a8905f" opacity=".8"/>`;
+    const t = i/tiers;
+    const ww = w*(1-t*0.52), hh = h/tiers;
+    const y  = baseY - h*0.14 - (i+1)*hh;
+    s += `<rect x="${R2(x-ww/2)}" y="${R2(y)}" width="${R2(ww)}" height="${R2(hh*.86)}" rx="1.6"
+            fill="#d9cdb4" stroke="#b9ab8c" stroke-width=".55"/>`;
+    s += `<rect x="${R2(x-ww/2-2.4)}" y="${R2(y+hh*.86)}" width="${R2(ww+4.8)}" height="${R2(hh*.16)}"
+            fill="#c9bb9c" stroke="#b0a183" stroke-width=".45"/>`;
+    const cells = Math.max(2, 5-i);
+    for(let c=0;c<cells;c++){
+      const cx = x - ww/2 + ww*(c+.5)/cells;
+      s += `<path d="M${R2(cx-ww*.055)},${R2(y+hh*.8)} L${R2(cx-ww*.055)},${R2(y+hh*.34)}
+                     Q${R2(cx)},${R2(y+hh*.12)} ${R2(cx+ww*.055)},${R2(y+hh*.34)}
+                     L${R2(cx+ww*.055)},${R2(y+hh*.8)} Z" fill="#c2b393" opacity=".9"/>`;
     }
   }
-  const topY=-h;
-  s+=`<path d="M${R2(-w*.21)},${R2(topY+4)} Q0,${R2(topY-w*.15)} ${R2(w*.21)},${R2(topY+4)} Z" fill="#f1e5c8" stroke="#bfa87a" stroke-width=".55"/>`;
-  for(let k=-2;k<=2;k++){
-    const kx=k*w*.075, ky=topY-w*.09+Math.abs(k)*w*.028;
-    s+=`<g transform="translate(${R2(kx)} ${R2(ky)})"><path d="M-2.4,0 Q0,-5 2.4,0 Z" fill="#c8a13c"/><circle cy="-5.4" r="2" fill="#e0bd5c"/><path d="M0,-7.6 L0,-11" stroke="#c8a13c" stroke-width="1.2"/></g>`;
-  }
-  return s+`</g>`;
-}
-/* ---------------- kalash pillar (image 4, left) ---------------- */
-function kalashPillar(x,baseY,w,h){
-  let s=`<g transform="translate(${x} ${baseY})">`;
-  s+=`<rect x="${-w/2}" y="${-h}" width="${w}" height="${h}" fill="#e3bda8" stroke="#c79a83" stroke-width=".7"/>`;
-  s+=`<rect x="${-w/2-5}" y="${-h}" width="${w+10}" height="9" fill="#d8a992" stroke="#c08d76" stroke-width=".6"/>`;
-  s+=`<rect x="${-w/2-3}" y="${-h*.30}" width="${w+6}" height="6" fill="#d8a992" opacity=".8"/>`;
-  const pots=[["#c2452f","#e6b23c"],["#2f7f8f","#e6b23c"],["#7a3f8f","#e6b23c"]];
-  pots.forEach((c,i)=>{
-    const py=-h-6-i*20, pw=w*(.86-i*.14);
-    s+=`<g transform="translate(0 ${py})">
-      <path d="M${R2(-pw/2)},0 Q${R2(-pw*.62)},${R2(-11)} 0,${R2(-15)} Q${R2(pw*.62)},${R2(-11)} ${R2(pw/2)},0 Z" fill="${c[0]}" stroke="#8d3a26" stroke-width=".5"/>
-      <rect x="${R2(-pw/2-2)}" y="-3.5" width="${R2(pw+4)}" height="4" fill="${c[1]}"/>
-      <path d="M${R2(-pw*.30)},${R2(-8)} h${R2(pw*.60)}" stroke="${c[1]}" stroke-width="2.4"/>
-    </g>`;
-  });
-  s+=garland([-w*.34,-h+6, -w*.5,-h*.55, -w*.2,-h*.35, -w*.30,-8],9,4.4,"marigold",21);
-  s+=garland([ w*.34,-h+6,  w*.5,-h*.55,  w*.2,-h*.35,  w*.30,-8],9,4.4,"marigold",33);
-  return s+`</g>`;
-}
-/* ---------------- cusped (multifoil) arch ---------------------- */
-function cuspedArch(cx,springY,rx,ry,cusps,band){
-  /* inner edge: a scalloped (multifoil) curve, sprung left -> right */
-  const pts=[];
-  for(let i=0;i<=cusps;i++){
-    const th=Math.PI-(i/cusps)*Math.PI;
-    pts.push([cx+Math.cos(th)*rx, springY-Math.sin(th)*ry]);
-  }
-  let inner=`M${R2(pts[0][0])},${R2(pts[0][1])}`;
-  for(let i=1;i<pts.length;i++){
-    const dx=pts[i][0]-pts[i-1][0], dy=pts[i][1]-pts[i-1][1];
-    const r=Math.hypot(dx,dy)*0.62;
-    inner+=` A${R2(r)},${R2(r)} 0 0 1 ${R2(pts[i][0])},${R2(pts[i][1])}`;
-  }
-  /* outer edge: sampled as a polyline right -> left, so the fill is a
-     true band rather than a filled dome (arc sweep flags are a trap here) */
-  const RX=rx+band, RY=ry+band, N=72;
-  let outer=` L${R2(cx+RX)},${R2(springY)}`;
-  for(let i=1;i<=N;i++){
-    const th=(i/N)*Math.PI;
-    outer+=` L${R2(cx+Math.cos(th)*RX)},${R2(springY-Math.sin(th)*RY)}`;
-  }
-  return {band:`<path d="${inner}${outer} Z" fill="url(#stoneGrad)" stroke="#b98d74" stroke-width=".8" stroke-linejoin="round"/>`,
-          innerPath:inner};
-}
-/* ---------------- carved pillar -------------------------------- */
-function pillar(x,top,bot,w){
-  const h=bot-top;
-  let s=`<g transform="translate(${x} 0)">`;
-  s+=`<rect x="${-w/2}" y="${top}" width="${w}" height="${h}" fill="url(#stoneGrad)" stroke="#b98d74" stroke-width=".7"/>`;
-  for(let i=1;i<4;i++) s+=`<line x1="${-w/2+ (w/4)*i}" y1="${top+14}" x2="${-w/2+(w/4)*i}" y2="${bot-16}" stroke="#c99a80" stroke-width=".55" opacity=".7"/>`;
-  [top, bot-14].forEach((yy,i)=>{
-    s+=`<rect x="${-w/2-6}" y="${yy+(i?0:-2)}" width="${w+12}" height="15" fill="#e4bda6" stroke="#b98d74" stroke-width=".7"/>`;
-    s+=`<rect x="${-w/2-9}" y="${yy+(i?13:-6)}" width="${w+18}" height="6" fill="#d6a58c" stroke="#b98d74" stroke-width=".5"/>`;
-  });
-  for(let i=0;i<5;i++){
-    const yy=top+34+i*((h-70)/5);
-    s+=`<path d="M${-w*.28},${R2(yy)} Q0,${R2(yy-7)} ${w*.28},${R2(yy)} Q0,${R2(yy+7)} ${-w*.28},${R2(yy)} Z" fill="#d19c82" opacity=".55"/>`;
-  }
-  return s+`</g>`;
-}
-/* ---------------- marigold + pineapple toran (image 5) --------- */
-function toran(y0,W,units){
-  let s=`<g>`;
-  const step=W/units;
-  for(let u=0;u<units;u++){
-    const cx=step*(u+.5);
-    for(let ring=0;ring<3;ring++){
-      const rr=step*(.46-ring*.105), n=9-ring*2;
-      for(let i=0;i<=n;i++){
-        const th=Math.PI+(i/n)*Math.PI;
-        s+=marigold(cx+Math.cos(th)*rr, y0-Math.sin(th)*rr*.82, 4.4, u*7+i+ring);
-      }
-    }
-  }
-  for(let u=0;u<=units;u++) s+=pineapple(step*u, y0);
-  return s+`</g>`;
-}
-function pineapple(x,y0){
-  let s='', yy=y0-6;
-  const rows=[3,3,3,2,2,2,1];
-  rows.forEach((n,ri)=>{
-    for(let i=0;i<n;i++) s+=marigold(x+(i-(n-1)/2)*6.4, yy, 3.6, ri*5+i+1);
-    yy-=6.6;
-  });
+  const topY = baseY - h*0.14 - tiers*(h/tiers);
+  s += `<path d="M${R2(x-w*.28)},${R2(topY)} Q${R2(x)},${R2(topY-h*.20)} ${R2(x+w*.28)},${R2(topY)} Z"
+          fill="#d4c7ad" stroke="#b9ab8c" stroke-width=".5"/>`;
   for(let k=-2;k<=2;k++)
-    s+=`<path d="M${R2(x+k*2.6)},${R2(yy+7)} Q${R2(x+k*7.5)},${R2(yy-5)} ${R2(x+k*4.4)},${R2(yy-17)}"
-         stroke="#2f7a2a" stroke-width="3.1" fill="none" stroke-linecap="round"/>`;
-  return s;
+    s += `<g transform="translate(${R2(x+k*w*.12)} ${R2(topY-h*.05)})">
+            <path d="M0,0 C-2.4,-3.4 -1.6,-7 0,-9.6 C1.6,-7 2.4,-3.4 0,0 Z" fill="#cdbfa4"/>
+            <circle cy="-11.4" r="1.7" fill="#cdbfa4"/></g>`;
+  s += `<rect x="${R2(x-w*.62)}" y="${R2(baseY-h*.14)}" width="${R2(w*1.24)}" height="${R2(h*.14)}"
+          fill="#cfc2a8" stroke="#b0a183" stroke-width=".5"/>`;
+  return s + `</g>`;
 }
-/* ---------------- straight marigold strand --------------------- */
-function strand(y,W,r,seed){
-  let s=`<path d="M0,${y} L${W},${y}" stroke="#6d9740" stroke-width="1" opacity=".45"/>`;
-  const n=Math.round(W/(r*1.72));
-  for(let i=0;i<=n;i++) s+=marigold((W/n)*i, y+Math.sin(i*.8)*1.4, r, seed+i);
-  return s;
+/* ---------------- shrubbery ------------------------------------ */
+function bush(x,y,w,h,seed,pal){
+  const rnd=rng(seed), p = pal||["#7f9c62","#6f8c54","#8fab72"];
+  let s=`<g>`;
+  for(let i=0;i<16;i++){
+    const bx = x + (rnd()-.5)*w, by = y - rnd()*h*.7;
+    s+=`<ellipse cx="${R2(bx)}" cy="${R2(by)}" rx="${R2(h*(.30+rnd()*.3))}" ry="${R2(h*(.24+rnd()*.24))}"
+          fill="${p[i%p.length]}" opacity="${(.55+rnd()*.35).toFixed(2)}"/>`;
+  }
+  return s+`</g>`;
+}
+/* ---------------- brass urn with a flower bouquet -------------- */
+function urn(x,baseY,sc,seed){
+  const rnd=rng(seed||7);
+  /* the bouquet spilling out of the mouth */
+  let fl="";
+  const pts=[[-30,-6],[-20,-20],[-4,-26],[12,-22],[26,-10],[-34,4],[32,4],
+             [-12,-34],[6,-34],[-26,-26],[20,-28],[0,-12],[-16,-8],[16,-10]];
+  pts.forEach((p,i)=>{
+    const ang = (rnd()*360)|0, L = 14+rnd()*12;
+    fl += blade(p[0]*.96, p[1]*.96, L, 4.6+rnd()*2, ang, LEAF_TONE[i%LEAF_TONE.length]);
+  });
+  pts.forEach((p,i)=>{
+    if(i%3===2) fl += jasmine(p[0], p[1], 3.4+rnd()*1.2);
+    else        fl += plumeria(p[0], p[1], 7.6+rnd()*3.4, rnd()*72, seed+i);
+  });
+  for(let i=0;i<7;i++) fl += jasmine(-34+i*11, 3+ (rnd()-.5)*5, 2.8+rnd());
+  return `<g transform="translate(${R2(x)} ${R2(baseY)}) scale(${sc})">
+    <g transform="translate(0 -46)">${fl}</g>
+    <ellipse cy="2" rx="30" ry="5" fill="rgba(90,62,30,.24)"/>
+    <path d="M-17,-44 L17,-44 L14,-38 L-14,-38 Z" fill="url(#brassG)" stroke="#8d6b1d" stroke-width=".6"/>
+    <path d="M-14,-38 C-30,-30 -30,-10 -20,-2 L20,-2 C30,-10 30,-30 14,-38 Z"
+          fill="url(#brassG)" stroke="#8d6b1d" stroke-width=".7"/>
+    <path d="M-10,-36 C-23,-28 -23,-12 -15,-4 C-22,-14 -21,-28 -8,-35 Z" fill="#ffe8ab" opacity=".55"/>
+    <path d="M-24,-22 L24,-22" stroke="#9c7622" stroke-width="1.5" opacity=".6"/>
+    <path d="M-26,-16 L26,-16" stroke="#9c7622" stroke-width="1" opacity=".45"/>
+    <path d="M-20,-2 L20,-2 L17,3 L-17,3 Z" fill="#b98f2b" stroke="#8d6b1d" stroke-width=".55"/>
+    <ellipse cy="3.2" rx="17" ry="3" fill="#a8802a"/>
+  </g>`;
+}
+/* ---------------- kolam drawn on the floor --------------------- */
+function kolamFloor(cx,cy,sc){
+  let k=`<g transform="translate(${R2(cx)} ${R2(cy)}) scale(${sc})"
+            stroke="#fffdf4" fill="none" stroke-width="1.5" stroke-linecap="round" opacity=".92">`;
+  for(let i=0;i<8;i++){
+    const a=i*45;
+    k+=`<path d="M0,-8 C10,-16 22,-14 26,-4 C22,2 10,2 0,-8 Z" transform="rotate(${a})"/>`;
+  }
+  for(let i=0;i<8;i++){
+    const a=i*45+22.5;
+    k+=`<path d="M0,-18 C7,-26 17,-28 23,-22" transform="rotate(${a})"/>`;
+  }
+  k+=`<circle r="5"/><circle r="9.4"/>`;
+  for(let r of [15,23,31]) for(let i=0;i<12;i++){
+    const a=(i*30)*Math.PI/180;
+    k+=`<circle cx="${R2(Math.cos(a)*r)}" cy="${R2(Math.sin(a)*r)}" r="1.1" fill="#fffdf4" stroke="none"/>`;
+  }
+  k+=`<path d="M-40,0 C-30,-12 -20,-12 -14,-4 C-20,4 -32,6 -40,0 Z"/>`;
+  k+=`<path d="M40,0 C30,-12 20,-12 14,-4 C20,4 32,6 40,0 Z"/>`;
+  return k+`</g>`;
 }
 /* ---------------- tassels -------------------------------------- */
 function buildTassels(){
@@ -644,13 +735,13 @@ function buildTassels(){
     </g>`;
   };
   document.getElementById('tassels').innerHTML=`
-  <svg viewBox="0 0 130 220" width="130" height="220">
+  <svg viewBox="0 0 130 220" width="104" height="176">
     <defs>
       <radialGradient id="beadGrad" cx="35%" cy="30%">
         <stop offset="0" stop-color="#ffeeb8"/><stop offset="60%" stop-color="#d8b23f"/><stop offset="100%" stop-color="#9a761f"/>
       </radialGradient>
     </defs>
-    <g transform="translate(24 6)">
+    <g transform="translate(96 6)">
       <path d="M0,0 C6,10 -4,16 2,24" stroke="#c8a13e" stroke-width="1.4" fill="none"/>
       ${t(-6,78,1.10,"#e9d18f")}
       ${t(10,98,1.28,"#dfc27c")}
@@ -661,215 +752,212 @@ function buildTassels(){
 }
 
 /* =================================================================
-   PAGE ARTWORK
+   PAGE ARTWORK — one card frame, shared by both pages
 ================================================================= */
 const PW = 330, PH = 414;
 const DEFS = `<defs>
-  <linearGradient id="stoneGrad" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#f0cdb8"/><stop offset="45%" stop-color="#e0b299"/>
-    <stop offset="100%" stop-color="#c9927a"/>
-  </linearGradient>
   <linearGradient id="paperGrad" x1="0" y1="0" x2="0.6" y2="1">
-    <stop offset="0" stop-color="#fffdf6"/><stop offset="52%" stop-color="#fdf6e6"/>
-    <stop offset="100%" stop-color="#f6ead3"/>
+    <stop offset="0" stop-color="#fffdf7"/><stop offset="50%" stop-color="#fdf7ea"/>
+    <stop offset="100%" stop-color="#f7eeda"/>
   </linearGradient>
-  <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#fbf7ee"/><stop offset="70%" stop-color="#f2ecdc"/>
-    <stop offset="100%" stop-color="#e9e6d4"/>
+  <radialGradient id="warmGlow" cx="50%" cy="34%" r="72%">
+    <stop offset="0" stop-color="#fffef9" stop-opacity=".95"/>
+    <stop offset="60%" stop-color="#fdf6e6" stop-opacity=".35"/>
+    <stop offset="100%" stop-color="#f0e2c6" stop-opacity=".28"/>
+  </radialGradient>
+  <linearGradient id="brassG" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#f3d484"/><stop offset="34%" stop-color="#d7a83c"/>
+    <stop offset="70%" stop-color="#b6862a"/><stop offset="100%" stop-color="#8d6b1d"/>
+  </linearGradient>
+  <radialGradient id="glowG" cx="50%" cy="50%" r="50%">
+    <stop offset="0" stop-color="#ffd782" stop-opacity=".55"/>
+    <stop offset="100%" stop-color="#ffd782" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="floorG" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#e6d3b4"/><stop offset="45%" stop-color="#dcc39d"/>
+    <stop offset="100%" stop-color="#cbae85"/>
   </linearGradient>
   <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="3"/>
     <feColorMatrix type="saturate" values="0"/></filter>
 </defs>`;
-const GRAIN = `<rect width="${PW}" height="${PH}" filter="url(#grain)" opacity=".055" style="mix-blend-mode:multiply"/>`;
+const GRAIN = `<rect width="${PW}" height="${PH}" filter="url(#grain)" opacity=".05" style="mix-blend-mode:multiply"/>`;
 
-/* ---------- page 1 : the mandap arch ---------- */
-function pageArch(){
-  const PX=38, QX=PW-38, TOP=46, BOT=402, PWid=24;
-  const SPRING=224, RX=112, RY=104, BAND=13;
-  const arch = cuspedArch(PW/2, SPRING, RX, RY, 9, BAND);
-  let s = `<svg viewBox="0 0 ${PW} ${PH}" preserveAspectRatio="xMidYMid meet">${DEFS}
-    <rect width="${PW}" height="${PH}" fill="url(#paperGrad)"/>
-    <rect x="8" y="8" width="${PW-16}" height="${PH-16}" fill="none" stroke="#e0c79a" stroke-width="1"/>
-    <rect x="12" y="12" width="${PW-24}" height="${PH-24}" fill="none" stroke="#cfae7a" stroke-width=".5"/>`;
-
-  /* lintel */
-  s += `<rect x="20" y="24" width="${PW-40}" height="21" fill="url(#stoneGrad)" stroke="#b98d74" stroke-width=".7"/>
-        <rect x="16" y="17" width="${PW-32}" height="8" fill="#e8c4ad" stroke="#b98d74" stroke-width=".6"/>`;
-  for(let i=0;i<12;i++) s += `<path d="M${27+i*23},45 l6,0 l-3,7 Z" fill="#d29f85" opacity=".85"/>`;
-  for(let i=0;i<10;i++) s += `<circle cx="${34+i*28}" cy="34" r="3" fill="#d8a98f" opacity=".7"/>`;
-
-  s += pillar(PX,TOP,BOT,PWid) + pillar(QX,TOP,BOT,PWid);
-  s += arch.band;
-  s += `<path d="${arch.innerPath}" fill="none" stroke="#a97a60" stroke-width=".7" opacity=".85"/>`;
-  /* imposts: the arch has to land on something */
-  [PX,QX].forEach(x=>{
-    s += `<rect x="${x-PWid/2-7}" y="214" width="${PWid+14}" height="13" fill="#e4bda6" stroke="#b98d74" stroke-width=".6"/>
-          <rect x="${x-PWid/2-10}" y="227" width="${PWid+20}" height="5" fill="#d6a58c" stroke="#b98d74" stroke-width=".45"/>`;
-  });
-
-  /* garlands down the pillars */
-  s += garland([PX-4,48, PX-16,176, PX+3,292, PX-3,374], 22, 5.6, "marigold", 5);
-  s += garland([PX+15,50, PX+26,182, PX+10,296, PX+16,368], 21, 4.6, "jasmine", 9);
-  s += garland([QX+4,48, QX+16,176, QX-3,292, QX+3,374], 22, 5.6, "marigold", 41);
-  s += garland([QX-15,50, QX-26,182, QX-10,296, QX-16,368], 21, 4.6, "jasmine", 55);
-  /* swags draped under the lintel */
-  s += garland([26,46, 76,86, 124,58, 158,72], 11, 4.8, "mixed", 71);
-  s += garland([PW-26,46, PW-76,86, PW-124,58, PW-158,72], 11, 4.8, "mixed", 83);
-
-  /* peacock feathers rising from the pillar feet */
-  s += peacock(PX+34, 380, -22, .98) + peacock(PX+19, 386, -42, .78);
-  s += peacock(QX-34, 380,  22, .98) + peacock(QX-19, 386,  42, .78);
-
-  /* flowers at the feet */
-  s += lotus(PX+2, 396, .95) + rose(PX+26, 400, .82, "#f3aec2", "#d9718f");
-  s += lotus(QX-2, 396, .95) + rose(QX-26, 400, .82, "#f3aec2", "#d9718f");
-  return s + GRAIN + `</svg>`;
+/* ---------- the faded temple courtyard behind everything -------- */
+function watermark(){
+  let s = `<g opacity=".105">`;
+  s += palm(38, 322, 96, .92, 11) + palm(70, 332, 74, .78, 17);
+  s += palm(292, 320, 100, .95, 23) + palm(262, 334, 70, .74, 29);
+  s += gopuram(126, 344, 96, 176);
+  s += `<g opacity=".8">` + gopuram(258, 348, 54, 96) + `</g>`;
+  s += palm(180, 340, 62, .66, 37) + palm(308, 344, 58, .62, 41);
+  s += bush(150, 348, 150, 26, 51, ["#c3b493","#b7a888","#cdbe9c"]);
+  return s + `</g>`;
 }
 
-/* ---------- page 2 : gopuram / muhurtham ---------- */
-function pageTemple(){
-  let s = `<svg viewBox="0 0 ${PW} ${PH}" preserveAspectRatio="xMidYMid meet">${DEFS}
-    <rect width="${PW}" height="${PH}" fill="url(#skyGrad)"/>`;
-  /* dry filigree tree, low in the left corner */
-  const rnd=rng(4);
-  let tw=`<g stroke="#cbb082" fill="none" stroke-linecap="round" opacity=".9">`;
-  (function branch(x,y,a,len,d){
-    if(d===0) return;
-    const nx=x+Math.cos(a)*len, ny=y+Math.sin(a)*len;
-    tw+=`<path d="M${R2(x)},${R2(y)} Q${R2((x+nx)/2+(rnd()-.5)*5)},${R2((y+ny)/2)} ${R2(nx)},${R2(ny)}" stroke-width="${(d*.38).toFixed(1)}"/>`;
-    branch(nx,ny,a-0.46-rnd()*.22,len*.72,d-1);
-    branch(nx,ny,a+0.44+rnd()*.22,len*.70,d-1);
-  })(24,352,-1.36,19,6);
-  s += tw+`</g>`;
-  const rnd2=rng(9);
-  let tw2=`<g stroke="#cdb287" fill="none" stroke-linecap="round" opacity=".85">`;
-  (function branch(x,y,a,len,d){
-    if(d===0) return;
-    const nx=x+Math.cos(a)*len, ny=y+Math.sin(a)*len;
-    tw2+=`<path d="M${R2(x)},${R2(y)} L${R2(nx)},${R2(ny)}" stroke-width="${(d*.34).toFixed(1)}"/>`;
-    branch(nx,ny,a-0.5-rnd2()*.2,len*.70,d-1);
-    branch(nx,ny,a+0.46+rnd2()*.2,len*.68,d-1);
-  })(PW-16,346,-1.52,17,5);
-  s += tw2+`</g>`;
+/* ---------- the garland-and-bell border across the top ---------- */
+function topBorder(){
+  let s = `<g>`;
+  const rnd = rng(101);
 
-  /* distant greenery */
-  s += bush(72,384,158,40,11,["#9dbf7e","#8cb06d","#adcb90"]);
-  s += bush(254,382,158,38,13,["#9dbf7e","#8cb06d","#adcb90"]);
-
-  s += gopuram(150, 398, 76, 120);
-
-  s += bananaPlant(100, 402, 62, 1.0, 21);
-  s += bananaPlant(212, 398, 52, .92, 31);
-  s += bananaPlant(268, 406, 68, 1.02, 41);
-  s += bananaPlant(312, 402, 56, .9, 51);
-  s += bananaPlant(54, 410, 50, .85, 61);
-
-  s += kalashPillar(22, 412, 27, 76);
-
-  s += bush(124,414,120,34,17);
-  s += bush(236,416,130,38,19);
-  s += bush(302,412,86,30,23);
-  s += bush(70,418,90,28,29);
-  s += lotus(152,410,.8) + lotus(196,414,.66);
-  return s + GRAIN + `</svg>`;
-}
-
-/* ---------- page 3 : marigold toran ---------- */
-function pageToran(){
-  let s = `<svg viewBox="0 0 ${PW} ${PH}" preserveAspectRatio="xMidYMid meet">${DEFS}
-    <rect width="${PW}" height="${PH}" fill="#f4f8f8"/>
-    <rect width="${PW}" height="${PH}" fill="url(#paperGrad)" opacity=".45"/>`;
-  s += strand(26, PW, 5.2, 101);
-  s += toran(404, PW, 7);
-  return s + GRAIN + `</svg>`;
-}
-
-/* ---------- page 4 : blessings ---------- */
-function pageBless(){
-  let s = `<svg viewBox="0 0 ${PW} ${PH}" preserveAspectRatio="xMidYMid meet">${DEFS}
-    <rect width="${PW}" height="${PH}" fill="url(#paperGrad)"/>
-    <rect x="14" y="14" width="${PW-28}" height="${PH-28}" fill="none" stroke="#d9b877" stroke-width="1"/>
-    <rect x="19" y="19" width="${PW-38}" height="${PH-38}" fill="none" stroke="#e8d3a6" stroke-width=".6"/>`;
-  /* kolam corners */
-  const kolam=(x,y,rot)=>{
-    let k=`<g transform="translate(${x} ${y}) rotate(${rot})" stroke="#c8a13e" fill="none" stroke-width=".9" stroke-linecap="round">`;
-    for(let i=0;i<4;i++){
-      const a=i*22;
-      k+=`<path d="M0,0 Q18,${4+i*5} 34,${-2-i*4}" transform="rotate(${a})"/>`;
+  /* a band of green blades running the full width, leaning outward */
+  for(let i=0;i<34;i++){
+    const t = i/33, x = t*PW;
+    const lean = (t-.5)*116;
+    s += blade(x, -6 + Math.sin(t*7.4)*5, 30+rnd()*24, 8+rnd()*5,
+               lean + (rnd()-.5)*22, LEAF_TONE[i%LEAF_TONE.length]);
+  }
+  /* jasmine strings hanging off that band, each finished with a bell */
+  for(let i=0;i<11;i++){
+    const x = 14 + i*30.2 + (rnd()-.5)*5;
+    /* deep at the edges, lifting clear of the crest over the middle */
+    const len = 17 + Math.abs(i-5)*7.2 + rnd()*6;
+    const n = Math.max(3, Math.round(len/8));
+    s += `<path d="M${R2(x)},2 L${R2(x)},${R2(len)}" stroke="#7f9c62" stroke-width=".9" opacity=".55"/>`;
+    for(let k=0;k<n;k++){
+      const y = 5 + k*(len/n);
+      s += (k%3===2) ? leaflet(x, y, 5, i+k) : jasmine(x, y, 3.3);
     }
-    k+=`<circle r="2.4" fill="#c8a13e"/>`;
-    for(let i=0;i<6;i++) k+=`<circle cx="${10+i*5}" cy="${-3-i*2}" r="1.3" fill="#dcbc6e" stroke="none"/>`;
-    return k+`</g>`;
+    if(Math.abs(i-5) >= 2 && i%2===0) s += bell(x, len + 13, .86, 6);
+  }
+  /* corner clusters: plumeria over a knot of leaves */
+  const corner = (cx, cy, mirror) => {
+    let c = `<g transform="translate(${R2(cx)} ${R2(cy)}) scale(${mirror} 1)">`;
+    const lv = [[-4,10,34],[10,2,58],[22,14,84],[-14,20,14],[6,26,102],[30,2,44],[18,30,124],[-6,34,-10]];
+    lv.forEach((l,i)=> c += blade(l[0], l[1], 30+ (i%3)*9, 9, l[2], LEAF_TONE[i%LEAF_TONE.length]));
+    c += plumeria(2, 14, 14, 10, 1) + plumeria(24, 26, 12, 40, 2)
+       + plumeria(-6, 36, 11, 70, 3) + plumeria(30, 6, 10.5, 25, 4)
+       + plumeria(14, 42, 9.5, 55, 5);
+    for(let i=0;i<9;i++) c += jasmine(-8 + (i*6)%42, 4 + (i*11)%46, 3.1);
+    return c + `</g>`;
   };
-  s += kolam(30,30,0)+kolam(PW-30,30,90)+kolam(PW-30,PH-30,180)+kolam(30,PH-30,270);
-  /* corner marigold sprays */
-  s += garland([26,44, 74,26, 128,52, 168,32], 10, 4.8, "mixed", 3);
-  s += garland([PW-26,PH-44, PW-74,PH-26, PW-128,PH-52, PW-168,PH-32], 10, 4.8, "mixed", 13);
-  /* central ornament */
-  s += `<g transform="translate(${PW/2} 196)" opacity=".22">
-    <circle r="60" fill="none" stroke="#c8a13e" stroke-width=".7"/>
-    <circle r="48" fill="none" stroke="#c8a13e" stroke-width=".5"/>`;
-  for(let i=0;i<16;i++) s+=`<path d="M0,-48 Q7,-58 0,-68 Q-7,-58 0,-48 Z" transform="rotate(${i*22.5})" fill="#c8a13e"/>`;
-  s += `</g>`;
-  s += peacock(PW/2-32, 358, -15, .84) + peacock(PW/2+32, 358, 15, .84);
-  return s + GRAIN + `</svg>`;
+  s += corner(16, 2, 1) + corner(PW-16, 2, -1);
+  return s + `</g>`;
+}
+
+/* ---------- the floor, the urns and the kolam ------------------- */
+function bottomScene(){
+  let s = `<g>`;
+  s += `<rect x="0" y="352" width="${PW}" height="${PH-352}" fill="url(#floorG)" opacity=".9"/>`;
+  s += `<rect x="0" y="352" width="${PW}" height="3" fill="#bfa079" opacity=".5"/>`;
+  for(let i=0;i<5;i++)
+    s += `<path d="M0,${360+i*12} L${PW},${356+i*12}" stroke="#c6a87e" stroke-width=".6" opacity=".35"/>`;
+  s += kolamFloor(PW/2, 390, .82);
+  s += urn(44, 404, .90, 13) + urn(PW-44, 404, .90, 27);
+  return s + `</g>`;
+}
+
+/* ---------- the finished card ----------------------------------- */
+function cardArt(){
+  return `<svg viewBox="0 0 ${PW} ${PH}" preserveAspectRatio="xMidYMid meet">${DEFS}
+    <rect width="${PW}" height="${PH}" fill="url(#paperGrad)"/>
+    <rect width="${PW}" height="${PH}" fill="url(#warmGlow)"/>
+    ${watermark()}
+    ${bottomScene()}
+    ${topBorder()}
+    ${hangLamp(23, 34, 96, .72, 1)}
+    ${hangLamp(PW-23, 34, 96, .72, 2)}
+    ${GRAIN}</svg>`;
+}
+/* =================================================================
+   THE TIE — twisted red-and-saffron thread, bowed over the fold
+================================================================= */
+const KX = 190, KY = 236;          /* where the knot sits on the closed leaf */
+
+/* one length of two-tone twisted cord */
+function cord(d,w){
+  w = w || 9;
+  const P = (stroke,width,extra) =>
+    `<path d="${d}" fill="none" stroke="${stroke}" stroke-width="${R2(width)}" ${extra||''}/>`;
+  return `
+    <g opacity=".3" transform="translate(2 4)">${P("#3d0a05", w+3, 'stroke-linecap="round" stroke-linejoin="round"')}</g>
+    ${P("#6f1109", w+1.6, 'stroke-linecap="round" stroke-linejoin="round"')}
+    ${P("#c22222", w,     'stroke-linecap="round" stroke-linejoin="round"')}
+    ${P("#f5b40f", w*.94, `stroke-linecap="butt" stroke-dasharray="${R2(w*.56)} ${R2(w*.60)}"`)}
+    ${P("#9c1512", w*.94, `stroke-linecap="butt" stroke-dasharray="${R2(w*.11)} ${R2(w*1.05)}" stroke-dashoffset="${R2(w*.56)}" opacity=".85"`)}
+    ${P("#e8641c", w*.52, `stroke-linecap="butt" stroke-dasharray="${R2(w*.24)} ${R2(w*.92)}" stroke-dashoffset="${R2(w*.70)}" opacity=".7"`)}
+    ${P("#ffeaa8", w*.24, `stroke-linecap="butt" stroke-dasharray="${R2(w*.30)} ${R2(w*.86)}" stroke-dashoffset="${R2(w*.14)}" opacity=".55"`)}
+    ${P("#ffffff", w*.44, `stroke-linecap="butt" stroke-dasharray="${R2(w*.16)} ${R2(w*1.0)}" stroke-dashoffset="${R2(w*.02)}" opacity=".14"`)}`;
+}
+
+function buildTie(){
+  /* the band runs off both edges of the folded leaf, as if it carries on behind */
+  const TAUT  = `M-18,246 C64,233 140,228 ${KX},230 C268,232 366,236 452,246`;
+  const SLACK = `M-18,246 C64,272 140,298 ${KX},300 C268,302 366,284 452,246`;
+
+  /* a fat, round bow — upper loop to the right, lower loop to the left */
+  const LOOP_U = `M${KX},${KY} C${KX-20},${KY-34} ${KX+2},${KY-76} ${KX+38},${KY-64}
+                  C${KX+70},${KY-53} ${KX+42},${KY-13} ${KX},${KY} Z`;
+  const LOOP_D = `M${KX},${KY} C${KX-26},${KY+32} ${KX-78},${KY+56} ${KX-102},${KY+37}
+                  C${KX-124},${KY+20} ${KX-70},${KY-3} ${KX},${KY} Z`;
+
+  const TAIL_A = `M${KX},${KY} C${KX+20},${KY+30} ${KX+9},${KY+58} ${KX+24},${KY+82}
+                  C${KX+34},${KY+98} ${KX+21},${KY+112} ${KX+8},${KY+119}`;
+  const TAIL_B = `M${KX},${KY} C${KX-16},${KY+25} ${KX-31},${KY+53} ${KX-21},${KY+77}
+                  C${KX-12},${KY+97} ${KX-27},${KY+109} ${KX-42},${KY+114}`;
+
+  /* the knot: a short length of cord wrapped twice round the middle */
+  const knot = `
+    <g opacity=".3" transform="translate(2 4)">
+      <ellipse cx="${KX}" cy="${KY}" rx="16" ry="12.5" fill="#3d0a05"/></g>
+    <ellipse cx="${KX}" cy="${KY}" rx="15" ry="11.8" fill="#6f1109"/>
+    <ellipse cx="${KX}" cy="${KY}" rx="13.4" ry="10.4" fill="#c22222"/>
+    <path d="M${KX-13},${KY-6.6} C${KX-4},${KY-11.4} ${KX+5},${KY-10.6} ${KX+13},${KY-4.4}"
+          stroke="#f5b40f" stroke-width="4.6" fill="none" stroke-linecap="round"/>
+    <path d="M${KX-13.4},${KY+1} C${KX-4},${KY+6.4} ${KX+5},${KY+6.2} ${KX+13},${KY+0.6}"
+          stroke="#f5b40f" stroke-width="4" fill="none" stroke-linecap="round" opacity=".92"/>
+    <path d="M${KX-12},${KY+6.4} C${KX-4},${KY+10.6} ${KX+5},${KY+10.2} ${KX+12},${KY+5.8}"
+          stroke="#e8641c" stroke-width="2.6" fill="none" stroke-linecap="round" opacity=".7"/>
+    <ellipse cx="${KX-4}" cy="${KY-4}" rx="5.4" ry="3.4" fill="#ffeaa8" opacity=".3"/>`;
+
+  document.getElementById('tie').innerHTML = `
+    <svg viewBox="0 0 372 470" aria-hidden="true">
+      <g id="tieDrop">
+        <g id="tieTaut">${cord(TAUT, 9.4)}</g>
+        <g id="tieSlack">${cord(SLACK, 9.4)}</g>
+        <g id="tieTailL">${cord(TAIL_B, 8.2)}</g>
+        <g id="tieTailR">${cord(TAIL_A, 8.2)}</g>
+        <g id="tieLoopD">${cord(LOOP_D, 8.8)}</g>
+        <g id="tieLoopU">${cord(LOOP_U, 8.8)}</g>
+        <g id="tieKnot">${knot}</g>
+      </g>
+    </svg>`;
 }
 
 /* =================================================================
    PAGES = artwork + copy
 ================================================================= */
 const I = INVITE;
+const CREST = `<svg class="gan" viewBox="-38 -58 76 94" aria-hidden="true">${ganesha(0,0,1)}</svg>`;
+
 const PAGES = [
-  { art: pageArch,
-    pad: "140px 72px 46px",
-    gap: 5,
+  { art: cardArt,
+    pad: "42px 34px 68px",
+    gap: 0,
     html: `
-      <div class="om">${I.invocation}</div>
-      <div class="bless" style="margin-top:4px">${I.blessingLine}</div>
-      <div class="nm" style="margin-top:9px">${I.groom}</div>
-      <div class="sep" style="margin:5px 0"><span class="rule"></span><span class="amp">${I.joiner}</span><span class="rule"></span></div>
-      <div class="nm">${I.bride}</div>
-      <div class="sep" style="margin-top:10px"><span class="diamond"></span></div>
-      <div class="dt" style="margin-top:6px;font-size:15.5px">${I.heroDate}</div>` },
+      ${CREST}
+      <div class="devn">${I.invocation}</div>
+      <div class="sep" style="margin:5px 0 4px"><span class="rule"></span><span class="diamond"></span><span class="rule"></span></div>
+      <div class="host">${I.hosts}</div>
+      <div class="req" style="margin-top:3px">${I.request}</div>
+      <div class="scriptnm" style="margin-top:5px">${I.bride}</div>
+      <div class="paren">${I.brideParen}</div>
+      <div class="jn" style="margin:3px 0 1px">${I.joiner}</div>
+      <div class="scriptnm">${I.groom}</div>
+      <div class="paren">${I.groomParen}</div>` },
 
-  { art: pageTemple,
-    pad: "38px 40px 162px",
-    gap: 6,
+  { art: cardArt,
+    pad: "74px 34px 66px",
+    gap: 1,
     html: `
-      <div class="ttl">${I.muhurtham.title}</div>
-      <div class="sep" style="margin:9px 0"><span class="rule"></span><span class="diamond"></span><span class="rule"></span></div>
-      <div class="dt">${I.muhurtham.when}</div>
-      <div class="sm" style="font-style:italic;margin-top:2px">${I.muhurtham.time}</div>
-      <div style="height:9px"></div>
-      <div class="ev"><div class="k">Venue</div>
-        <div class="v" style="margin-top:3px">${I.muhurtham.venue}</div>
-        <div class="w" style="font-style:normal;margin-top:2px">${I.muhurtham.addr}</div></div>
-      <a class="mapbtn" href="${I.mapUrl}" target="_blank" rel="noopener">&#9788; Directions</a>` },
-
-  { art: pageToran,
-    pad: "48px 42px 112px",
-    gap: 5,
-    html: `
-      <div class="ttl">Celebrations</div>
-      <div class="sep" style="margin:9px 0 2px"><span class="rule"></span></div>
-      <div class="sched">
-        ${I.events.map(e=>`<div class="ev"><div class="k">${e.k}</div><div class="v">${e.v}</div><div class="w">${e.w}</div></div>`).join("")}
-      </div>
-      <div class="bless" style="margin-top:12px;font-size:12.5px">${I.eventsNote}</div>` },
-
-  { art: pageBless,
-    pad: "72px 44px 84px",
-    gap: 6,
-    html: `
-      <div class="ttl">With Love &amp; Blessings</div>
-      <div class="sep" style="margin:11px 0"><span class="rule"></span><span class="diamond"></span><span class="rule"></span></div>
-      <div class="ev" style="align-items:center"><div class="k">${I.familyLeft.head}</div>
-        <div class="v" style="margin-top:2px">${I.familyLeft.names}</div></div>
-      <div style="height:10px"></div>
-      <div class="ev" style="align-items:center"><div class="k">${I.familyRight.head}</div>
-        <div class="v" style="margin-top:2px">${I.familyRight.names}</div></div>
-      <div class="sep" style="margin:16px 0 6px"><span class="rule"></span></div>
-      <div class="sm" style="font-size:12.5px;letter-spacing:.03em">${I.rsvp}</div>` }
+      <div class="lil">${I.dateLead}</div>
+      <div class="big" style="margin-top:2px">${I.date}</div>
+      <div class="lil" style="margin-top:5px">${I.venueLead}</div>
+      <div class="big" style="margin-top:2px">${I.venue}</div>
+      <div class="addr" style="margin-top:4px">${I.address}</div>
+            ${I.slots.map(s=>`<div class="slot"><b>${s.k}</b><i>${s.v}</i></div>`).join("")}
+      <div class="sep" style="margin:9px 0 5px"><span class="rule"></span><span class="diamond"></span><span class="rule"></span></div>
+      <div class="compl">${I.complimentsLead} <b>${I.compliments}</b></div>
+      <a class="mapbtn" href="${I.mapUrl}" target="_blank" rel="noopener" style="margin-top:7px">&#9788; Directions</a>` }
 ];
 
 /* =================================================================
@@ -912,6 +1000,7 @@ clip.style.cssText = `position:absolute;left:-7px;top:112px;width:8px;height:34p
 book.appendChild(brad); book.appendChild(clip);
 
 buildTassels();
+buildTie();
 
 /* =================================================================
    STATE
@@ -921,7 +1010,7 @@ const leafEl = document.getElementById('leaf');
 const prevB  = document.getElementById('prev');
 const nextB  = document.getElementById('next');
 const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-let opened = false, cur = 0, busy = false;
+let opened = false, cur = 0, busy = false, untying = false, tied = true;
 
 function paint(){
   pageEls.forEach((el,i)=>{
@@ -954,20 +1043,44 @@ function swingTassels(){
   setTimeout(()=>t.classList.remove('kick'), 1500);
 }
 
+const tieEl = document.getElementById('tie');
+
+/* the bow has to come undone before the leaf will unfold */
 function open(){
-  if(opened) return;
+  if(opened || untying) return;
+  if(!tied){ unfold(); return; }
+
+  if(reduce){ tieEl.classList.add('gone'); tied = false; unfold(); return; }
+
+  untying = true;
+  tieEl.classList.add('untying');
+  setTimeout(()=>{
+    tieEl.classList.add('gone');
+    tied = false; untying = false;
+    unfold();
+  }, 1000);
+}
+
+function unfold(){
   opened = true;
   root.classList.add('opened');
   fit();
   rainPetals(30);
   setTimeout(swingTassels, 900);
 }
+
 function close(){
-  if(!opened) return;
+  if(!opened || untying) return;
   opened = false;
   cur = 0; paint();
   root.classList.remove('opened');
   fit();
+  /* once it is folded again the thread goes back on */
+  setTimeout(()=>{
+    if(opened) return;
+    tieEl.classList.remove('untying','gone');
+    tied = true;
+  }, reduce ? 20 : 1150);
 }
 
 /* =================================================================
@@ -1021,6 +1134,7 @@ function rainPetals(n){
    EVENTS
 ================================================================= */
 leafEl.addEventListener('click', e=>{
+  if(untying) return;
   if(!opened){ open(); return; }
   /* once open, tapping the left/right half of the card turns pages */
   const b = document.getElementById('book').getBoundingClientRect();
@@ -1030,6 +1144,7 @@ leafEl.addEventListener('click', e=>{
   }
 });
 leafEl.addEventListener('keydown', e=>{
+  if(untying) return;
   if(e.key===' '||e.key==='Enter'){ e.preventDefault(); opened ? goto(cur+1) : open(); }
 });
 prevB.addEventListener('click', e=>{ e.stopPropagation(); goto(cur-1); });
@@ -1049,6 +1164,7 @@ addEventListener('touchend', e=>{
   if(!tracking) return; tracking=false;
   const dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
   if(Math.abs(dx) < 45 || Math.abs(dx) < Math.abs(dy)) return;
+  if(untying) return;
   if(!opened){ open(); return; }
   goto(dx < 0 ? cur+1 : cur-1);
 }, {passive:true});
